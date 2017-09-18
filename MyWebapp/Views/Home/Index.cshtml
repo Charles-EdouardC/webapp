@@ -5,6 +5,29 @@
 <div class="jumbotron">
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p>
+        <h1>Swap with Preview Test Page</h1>
+        <table>
+            <tr>
+                <th>Server Variable</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Process ID: </td>
+                <td><%= System.Diagnostics.Process.GetCurrentProcess().Id %></td>
+            </tr>
+            <tr>
+                <td>SlotName: </td>
+                <td><%= Environment.GetEnvironmentVariable("SlotName") %></td>
+            </tr>
+            <tr>
+                <td>ConnectionString: </td>
+                <td><%= Environment.GetEnvironmentVariable("SQLAZURECONNSTR_ConnectionString") %></td>
+            </tr>
+        </table> 
+
+
+    </p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
